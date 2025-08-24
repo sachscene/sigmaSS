@@ -1,7 +1,7 @@
 -- Whitelist version (Delete the one you don't want, I suggest deleting the first one because this is safer and better.)
 
 game.Players.PlayerAdded:Connect(function(plr)
-if plr = () then
+if plr = (1261200208) then
 		require(122642281679887).YourModuleLoad(plr.Name)
 end
 
